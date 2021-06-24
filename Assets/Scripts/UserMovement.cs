@@ -10,10 +10,15 @@ public class UserMovement : MonoBehaviour
     public GameObject playerCamera;
 
     public GameObject GemText;
+    public GameObject TestText;
+    public GameObject TransportEfficiencyText;
 
     void Start()
     {
-           GemText.SetActive(false);
+        Debug.Log("start done");
+        GemText.SetActive(false);
+        TestText.SetActive(false);
+        TransportEfficiencyText.SetActive(false);
     }
 
 // Update is called once per frame
@@ -65,6 +70,12 @@ void Update()
             GemText.SetActive(true);
             //count = count + 1;
             //SetCountText();
+        }
+        else if (other.gameObject.CompareTag("TransportEfficiency"))
+        {
+            
+            TransportEfficiencyText.SetActive(true);
+            
         }
 
     }
