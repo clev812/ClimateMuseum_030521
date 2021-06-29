@@ -1,6 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+//if random errors occur try to remove this line:
+//using UnityEngine.UI;
+//
 
 public class UserMovement : MonoBehaviour
 {
@@ -8,17 +12,85 @@ public class UserMovement : MonoBehaviour
     public float rotateSpeed;
     public float scrollSpeed;
     public GameObject playerCamera;
+    public int count;
+    public TMP_Text countText;
 
-    public GameObject GemText;
-    public GameObject TestText;
+   
+
+    //Gems
+    public GameObject TransportEfficiencyGem;
+    public GameObject InstructionGem;
+    public GameObject EnergySupplyGem;
+    public GameObject EmissionsGem;
+    public GameObject CarbonRemovalGem;
+    public GameObject GrowthGem;
+    public GameObject BuildingsIndustryGem;
+    public GameObject PlantGem;
+
+    //Texts
     public GameObject TransportEfficiencyText;
+    public GameObject InstructionText;
+    //public GameObject EnergySupplyText;
+    //public GameObject EmissionsText;
+    //public GameObject CarbonRemovalText;
+    //public GameObject GrowthText;
+    //public GameObject BuildingsIndustryText;
+    //public GameObject PlantText;
+
+    //Minigems
+    public GameObject TransportEfficiencyGemMini;
+    public GameObject InstructionGemMini;
+    public GameObject EnergySupplyGemMini;
+    public GameObject EmissionsGemMini;
+    public GameObject CarbonRemovalGemMini;
+    public GameObject GrowthGemMini;
+    public GameObject BuildingsIndustryGemMini;
+    public GameObject PlantGemMini;
+
+
+    public GameObject FoundGemText;
+    public GameObject InventoryText;
+    public GameObject ChallengeText;
+    public GameObject TestText;
+    
 
     void Start()
     {
         Debug.Log("start done");
-        GemText.SetActive(false);
+        count = 0;
+        SetCountText();
+
+
+        //deactivate gems
+        TransportEfficiencyGem.SetActive(false);
+        //EnergySupplyGem.SetActive(false);
+        //InstructionGem.SetActive(false);
+        //EmissionsGem.SetActive(false);
+        //CarbonRemovalGem.SetActive(false);
+        //GrowthGem.SetActive(false);
+        //BuildingsIndustryGem.SetActive(false);
+        //PlantGem.SetActive(false);
+
+        //deactivate mini gems
+        TransportEfficiencyGemMini.SetActive(false);
+        EnergySupplyGemMini.SetActive(false);
+        InstructionGemMini.SetActive(false);
+        EmissionsGemMini.SetActive(false);
+        CarbonRemovalGemMini.SetActive(false);
+        GrowthGemMini.SetActive(false);
+        BuildingsIndustryGemMini.SetActive(false);
+        PlantGemMini.SetActive(false);
+
+
+        //deactivate texts
         TestText.SetActive(false);
+        FoundGemText.SetActive(false);
+        InventoryText.SetActive(false);
+        ChallengeText.SetActive(false);
+
         TransportEfficiencyText.SetActive(false);
+        InstructionText.SetActive(false);
+        
     }
 
 // Update is called once per frame
@@ -64,19 +136,40 @@ void Update()
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Gem"))
+        
+         if (other.gameObject.CompareTag("TransportEfficiency"))
         {
-            //other.gameObject.SetActive(false)
-            GemText.SetActive(true);
-            //count = count + 1;
-            //SetCountText();
-        }
-        else if (other.gameObject.CompareTag("TransportEfficiency"))
-        {
-            
+            TransportEfficiencyGem.SetActive(false);
+            TransportEfficiencyGemMini.SetActive(true);
             TransportEfficiencyText.SetActive(true);
+            count++;
+            //FoundGemText.SetActive(true);
             
         }
+        else if (other.gameObject.CompareTag("Instruction"))
+        {
+            InstructionGem.SetActive(false);
+            InstructionGemMini.SetActive(true);
+            InstructionText.SetActive(true);
+            count ++;
+           
+        }
+
+        SetCountText();
+
+    }
+
+    void SetCountText()
+    {
+        if (count == 1)
+        {
+            countText.text = "\n currently, you own " + count.ToString() + " gem";
+        }
+        else
+        {
+            countText.text = "\n currently, you own " + count.ToString() + " gems";
+        }
+        
 
     }
 }

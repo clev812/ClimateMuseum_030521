@@ -8,6 +8,13 @@ TagManager:
   - Path
   - Gem
   - TransportEfficiency
+  - Instruction
+  - EnergySupply
+  - Emissions
+  - CarbonRemoval
+  - Growth
+  - BuildingsIndustry
+  - Plant
   layers:
   - Default
   - TransparentFX
