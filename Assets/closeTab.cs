@@ -5,7 +5,7 @@ using UnityEngine;
 public class closeTab : MonoBehaviour
 {
     public GameObject TextTab;
-    public GameObject FoundGemTab;
+   // public GameObject FoundGemTab;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,16 +14,16 @@ public class closeTab : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (TextTab.activeSelf)
-        {
+        //if (TextTab.activeSelf)
+        //{
            
+         //   TextTab.SetActive(false);
+         //   FoundGemTab.SetActive(true);
+        //}
+        //else
+        //{
             TextTab.SetActive(false);
-            FoundGemTab.SetActive(true);
-        }
-        else
-        {
-            FoundGemTab.SetActive(false);
-        }
+        //}
             
         //Debug.Log("Interaction works");
 

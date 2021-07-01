@@ -5,7 +5,7 @@ using UnityEngine;
 public class interactionTranspEfficiency : MonoBehaviour
 {
 
-    public GameObject TransportEfficiencyGem;
+    public GameObject Gem;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +15,7 @@ public class interactionTranspEfficiency : MonoBehaviour
 
     void OnMouseDown()
     {
-        TransportEfficiencyGem.SetActive(true);
+        Gem.SetActive(true);
         //Debug.Log("Interaction works");
 
     }
