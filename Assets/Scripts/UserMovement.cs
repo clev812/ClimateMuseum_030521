@@ -77,8 +77,8 @@ public class UserMovement : MonoBehaviour
         InstructionGem.SetActive(false);
         //EmissionsGem.SetActive(false);
         //CarbonRemovalGem.SetActive(false);
-        //GrowthGem.SetActive(false);
-        //BuildingsIndustryGem.SetActive(false);
+        GrowthGem.SetActive(false);
+        BuildingsIndustryGem.SetActive(false);
         PlantGem.SetActive(false);
 
         //deactivate mini gems
