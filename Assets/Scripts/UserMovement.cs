@@ -73,10 +73,10 @@ public class UserMovement : MonoBehaviour
 
         //deactivate gems
         TransportEfficiencyGem.SetActive(false);
-        //EnergySupplyGem.SetActive(false);
+        EnergySupplyGem.SetActive(false);
         InstructionGem.SetActive(false);
-        //EmissionsGem.SetActive(false);
-        //CarbonRemovalGem.SetActive(false);
+        EmissionsGem.SetActive(false);
+        CarbonRemovalGem.SetActive(false);
         GrowthGem.SetActive(false);
         BuildingsIndustryGem.SetActive(false);
         PlantGem.SetActive(false);
