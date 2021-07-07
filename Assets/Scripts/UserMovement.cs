@@ -12,6 +12,8 @@ public class UserMovement : MonoBehaviour
     public float rotateSpeed;
     public float scrollSpeed;
     public GameObject playerCamera;
+
+    public ParticleSystem effect;
     
 
    
@@ -70,6 +72,10 @@ public class UserMovement : MonoBehaviour
         SetChallengeProgress();
         SetChallengeText();
 
+        //effect = GetComponent<ParticleSystem>();
+        //effect.enableEmission = true;
+
+        effect.Stop();
 
         //deactivate gems
         TransportEfficiencyGem.SetActive(false);
@@ -167,7 +173,8 @@ public class UserMovement : MonoBehaviour
             InstructionGem.SetActive(false);
             InstructionGemMini.SetActive(true);
             InstructionText.SetActive(true);
-            count ++;   
+            count ++;
+            effect.Play();
         }
 
         else if (other.gameObject.CompareTag("EnergySupply"))
@@ -176,6 +183,7 @@ public class UserMovement : MonoBehaviour
             EnergySupplyGemMini.SetActive(true);
             EnergySupplyText.SetActive(true);
             count++;
+            effect.Play();
         }
 
         else if (other.gameObject.CompareTag("Emissions"))
@@ -184,6 +192,7 @@ public class UserMovement : MonoBehaviour
             EmissionsGemMini.SetActive(true);
             EmissionsText.SetActive(true);
             count++;
+            effect.Play();
         }
 
         else if (other.gameObject.CompareTag("CarbonRemoval"))
@@ -192,6 +201,7 @@ public class UserMovement : MonoBehaviour
             CarbonRemovalGemMini.SetActive(true);
             CarbonRemovalText.SetActive(true);
             count++;
+            effect.Play();
         }
 
         else if (other.gameObject.CompareTag("Growth"))
@@ -200,6 +210,7 @@ public class UserMovement : MonoBehaviour
             GrowthGemMini.SetActive(true);
             GrowthText.SetActive(true);
             count++;
+            effect.Play();
         }
 
         else if (other.gameObject.CompareTag("BuildingsIndustry"))
@@ -208,6 +219,7 @@ public class UserMovement : MonoBehaviour
             BuildingsIndustryGemMini.SetActive(true);
             BuildingsIndustryText.SetActive(true);
             count++;
+            effect.Play();
         }
 
         else if (other.gameObject.CompareTag("Plant"))
@@ -216,6 +228,7 @@ public class UserMovement : MonoBehaviour
             PlantGemMini.SetActive(true);
             PlantText.SetActive(true);
             count++;
+            effect.Play();
         }
 
 

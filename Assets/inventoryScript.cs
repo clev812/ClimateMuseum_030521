@@ -5,6 +5,7 @@ using UnityEngine;
 public class inventoryScript : MonoBehaviour
 {
     public GameObject inventoryTab;
+    public ParticleSystem effect;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +15,8 @@ public class inventoryScript : MonoBehaviour
     void OnMouseDown()
     {
         inventoryTab.SetActive(true);
+        effect.Stop();
+
 
     }
 
