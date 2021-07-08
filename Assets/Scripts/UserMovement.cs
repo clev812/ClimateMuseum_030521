@@ -76,6 +76,10 @@ public class UserMovement : MonoBehaviour
         //effect.enableEmission = true;
 
         effect.Stop();
+        //ParticleSystem ps = GetComponent<ParticleSystem>();
+        var lights = effect.lights;
+        lights.enabled = false;
+        //effect.lights.enabled = false;
 
         //deactivate gems
         TransportEfficiencyGem.SetActive(false);

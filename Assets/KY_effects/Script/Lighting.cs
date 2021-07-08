@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Lighting : MonoBehaviour {
 
-public float lighting = 1;
+public float lighting = 0; //1
 public Light lightPower;
 public bool  flashFlg = false;
 public float flashTimer = 0.3f;
@@ -15,7 +15,7 @@ public float keepTime = 0;
 
 public bool  flashingFlg = false;
 public float minLight = 0;
-public float maxLight = 1;
+public float maxLight = 0; //1
 private bool  lightOffFlg = false;
 public float flashingOff = 0;
 public float flashingOffPower = 0;
