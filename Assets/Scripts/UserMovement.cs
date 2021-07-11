@@ -114,7 +114,7 @@ public class UserMovement : MonoBehaviour
         EmissionsText.SetActive(false);
         CarbonRemovalText.SetActive(false);
         GrowthText.SetActive(false);
-       // BuildingsIndustryText.SetActive(false);
+        BuildingsIndustryText.SetActive(false);
         PlantText.SetActive(false);
 
 
