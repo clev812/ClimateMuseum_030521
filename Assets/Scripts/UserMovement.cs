@@ -14,6 +14,8 @@ public class UserMovement : MonoBehaviour
     public GameObject playerCamera;
 
     public ParticleSystem effect;
+
+    public GameObject AlreadyFoundText;
     
 
    
@@ -103,6 +105,7 @@ public class UserMovement : MonoBehaviour
 
 
         //deactivate texts
+        AlreadyFoundText.SetActive(false);
         TestText.SetActive(false);
         FoundGemText.SetActive(false);
         InventoryText.SetActive(false);

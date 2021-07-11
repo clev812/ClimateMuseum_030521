@@ -6,6 +6,8 @@ public class interactionTranspEfficiency : MonoBehaviour
 {
 
     public GameObject Gem;
+    public GameObject MiniGem;
+    public GameObject Text;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,8 +17,16 @@ public class interactionTranspEfficiency : MonoBehaviour
 
     void OnMouseDown()
     {
-        Gem.SetActive(true);
-        //Debug.Log("Interaction works");
+        if (!MiniGem.activeSelf)
+        {
+            Gem.SetActive(true);
+        }
+        else
+        {
+            Debug.Log("gem already collected");
+            Text.SetActive(true);
+        }
+
 
     }
 
