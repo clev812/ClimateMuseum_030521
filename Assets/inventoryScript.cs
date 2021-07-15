@@ -16,6 +16,7 @@ public class inventoryScript : MonoBehaviour
     {
         inventoryTab.SetActive(true);
         effect.Stop();
+        gameObject.SetActive(false);
 
 
     }

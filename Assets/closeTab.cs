@@ -5,6 +5,7 @@ using UnityEngine;
 public class closeTab : MonoBehaviour
 {
     public GameObject TextTab;
+    public GameObject inventory;
    // public GameObject FoundGemTab;
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,8 @@ public class closeTab : MonoBehaviour
         //else
         //{
             TextTab.SetActive(false);
+        inventory.SetActive(true);
+
         //}
             
         //Debug.Log("Interaction works");

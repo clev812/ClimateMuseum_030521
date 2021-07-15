@@ -8,6 +8,7 @@ public class interactionTranspEfficiency : MonoBehaviour
     public GameObject Gem;
     public GameObject MiniGem;
     public GameObject Text;
+    public GameObject inventory;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,7 @@ public class interactionTranspEfficiency : MonoBehaviour
         {
             Debug.Log("gem already collected");
             Text.SetActive(true);
+            inventory.SetActive(false);
         }
 
 

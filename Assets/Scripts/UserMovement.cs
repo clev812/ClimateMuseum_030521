@@ -16,6 +16,8 @@ public class UserMovement : MonoBehaviour
     public ParticleSystem effect;
 
     public GameObject AlreadyFoundText;
+    public GameObject tracker;
+    public GameObject inventory;
     
 
    
@@ -133,6 +135,7 @@ public class UserMovement : MonoBehaviour
         else if(Input.GetKey(KeyCode.UpArrow) && ! Input.GetKey(KeyCode.LeftShift))
         {
             transform.position += transform.TransformDirection(Vector3.forward) * Time.deltaTime * movementSpeed;
+            
         }
         else if (Input.GetKey(KeyCode.DownArrow))
         {
@@ -162,6 +165,13 @@ public class UserMovement : MonoBehaviour
             transform.position += transform.TransformDirection(Vector3.forward)*Input.mouseScrollDelta.y * Time.deltaTime * scrollSpeed * 2.5f;
         }
 
+        float x;
+        float y;
+        x = (transform.position.x) / 24;
+        y = (transform.position.z) / 24;
+        tracker.transform.position.Set(x, y, 0f);
+
+
     }
 
     void OnTriggerEnter(Collider other)
@@ -169,6 +179,7 @@ public class UserMovement : MonoBehaviour
         
          if (other.gameObject.CompareTag("TransportEfficiency"))
         {
+            inventory.SetActive(false);
             TransportEfficiencyGem.SetActive(false);
             TransportEfficiencyGemMini.SetActive(true);
             TransportEfficiencyText.SetActive(true);
@@ -177,6 +188,7 @@ public class UserMovement : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("Instruction"))
         {
+            inventory.SetActive(false);
             InstructionGem.SetActive(false);
             InstructionGemMini.SetActive(true);
             InstructionText.SetActive(true);
@@ -186,6 +198,7 @@ public class UserMovement : MonoBehaviour
 
         else if (other.gameObject.CompareTag("EnergySupply"))
         {
+            inventory.SetActive(false);
             EnergySupplyGem.SetActive(false);
             EnergySupplyGemMini.SetActive(true);
             EnergySupplyText.SetActive(true);
@@ -195,6 +208,7 @@ public class UserMovement : MonoBehaviour
 
         else if (other.gameObject.CompareTag("Emissions"))
         {
+            inventory.SetActive(false);
             EmissionsGem.SetActive(false);
             EmissionsGemMini.SetActive(true);
             EmissionsText.SetActive(true);
@@ -204,6 +218,7 @@ public class UserMovement : MonoBehaviour
 
         else if (other.gameObject.CompareTag("CarbonRemoval"))
         {
+            inventory.SetActive(false);
             CarbonRemovalGem.SetActive(false);
             CarbonRemovalGemMini.SetActive(true);
             CarbonRemovalText.SetActive(true);
@@ -213,6 +228,7 @@ public class UserMovement : MonoBehaviour
 
         else if (other.gameObject.CompareTag("Growth"))
         {
+            inventory.SetActive(false);
             GrowthGem.SetActive(false);
             GrowthGemMini.SetActive(true);
             GrowthText.SetActive(true);
@@ -222,6 +238,7 @@ public class UserMovement : MonoBehaviour
 
         else if (other.gameObject.CompareTag("BuildingsIndustry"))
         {
+            inventory.SetActive(false);
             BuildingsIndustryGem.SetActive(false);
             BuildingsIndustryGemMini.SetActive(true);
             BuildingsIndustryText.SetActive(true);
@@ -231,6 +248,7 @@ public class UserMovement : MonoBehaviour
 
         else if (other.gameObject.CompareTag("Plant"))
         {
+            inventory.SetActive(false);
             PlantGem.SetActive(false);
             PlantGemMini.SetActive(true);
             PlantText.SetActive(true);
