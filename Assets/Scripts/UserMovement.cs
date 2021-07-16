@@ -16,7 +16,7 @@ public class UserMovement : MonoBehaviour
     public ParticleSystem effect;
 
     public GameObject AlreadyFoundText;
-    public GameObject tracker;
+   // public GameObject tracker;
     public GameObject inventory;
     
 
@@ -169,7 +169,7 @@ public class UserMovement : MonoBehaviour
         float y;
         x = (transform.position.x) / 24;
         y = (transform.position.z) / 24;
-        tracker.transform.position.Set(x, y, 0f);
+        //tracker.transform.position.Set(x, y, 0f);
 
 
     }
