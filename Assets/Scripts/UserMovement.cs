@@ -18,6 +18,7 @@ public class UserMovement : MonoBehaviour
     public GameObject AlreadyFoundText;
    // public GameObject tracker;
     public GameObject inventory;
+    public GameObject map;
     
 
    
@@ -188,6 +189,15 @@ public class UserMovement : MonoBehaviour
         x = (transform.position.x) / 24;
         y = (transform.position.z) / 24;
         //tracker.transform.position.Set(x, y, 0f);
+
+        if (inventory.activeSelf)
+        {
+            map.SetActive(true);
+        } 
+        else
+        {
+            map.SetActive(false);
+        }
 
 
     }

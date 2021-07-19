@@ -6,6 +6,7 @@ public class map : MonoBehaviour
 {
 
     public GameObject mapTab;
+    public GameObject inventory;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +16,7 @@ public class map : MonoBehaviour
     {
         mapTab.SetActive(true);
         gameObject.SetActive(false);
+        inventory.SetActive(false);
 
 
     }
