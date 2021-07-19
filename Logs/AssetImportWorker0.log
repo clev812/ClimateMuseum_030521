@@ -15,11 +15,11 @@ C:/Users/Taermelin-Razer/Documents/ClimateMuseum/ClimateMuseum_030521
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61749
+59399
 Successfully changed project path to: C:/Users/Taermelin-Razer/Documents/ClimateMuseum/ClimateMuseum_030521
 C:/Users/Taermelin-Razer/Documents/ClimateMuseum/ClimateMuseum_030521
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 32.20 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 154.99 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.6f1 (338bb68529b2)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/Resources/UnitySubsystems
@@ -35,381 +35,150 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56316
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56732
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002331 seconds.
+Registered in 0.009033 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 35.97 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 133.94 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.134 seconds
+- Completed reload, in  2.696 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000948 seconds.
+Registered in 0.001858 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.34 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.065 seconds
+- Completed reload, in  1.242 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.31 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.23 seconds
+Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1187 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 64.0 MB.
+Unloading 1189 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 64.1 MB.
 System memory in use after: 64.1 MB.
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1644.
-Total: 2.383900 ms (FindLiveObjects: 0.318800 ms CreateObjectMapping: 0.118400 ms MarkObjects: 1.855100 ms  DeleteObjects: 0.090700 ms)
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1646.
+Total: 4.292000 ms (FindLiveObjects: 0.551300 ms CreateObjectMapping: 0.276300 ms MarkObjects: 3.326100 ms  DeleteObjects: 0.136600 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Free Game Items/300dpi/hammer.png
-  artifactKey: Guid(85b5c08cd5f304b4eb3a556df2a428d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/300dpi/hammer.png using Guid(85b5c08cd5f304b4eb3a556df2a428d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '559329c74ddbdc1e16e5f9098f29d3bc') in 0.157271 seconds
-  Import took 0.159724 seconds .
+  path: Assets/Scripts
+  artifactKey: Guid(f9675bc40a19629478a8220850c0392f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(f9675bc40a19629478a8220850c0392f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5553819fe5ba5284d290fedc54b6575f') in 0.010042 seconds
+  Import took 0.015560 seconds .
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000365 seconds.
-  path: Assets/Free Game Items/96dpi/bomb.png
-  artifactKey: Guid(db87746129cc599478e1ae8cecedefd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/96dpi/bomb.png using Guid(db87746129cc599478e1ae8cecedefd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '863a9452d2fcc953ee34a8c21acc7a8c') in 0.014266 seconds
-  Import took 0.017039 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001103 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.345 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1172 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.8 MB.
+System memory in use after: 62.9 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1649.
+Total: 2.084800 ms (FindLiveObjects: 0.152100 ms CreateObjectMapping: 0.044900 ms MarkObjects: 1.870100 ms  DeleteObjects: 0.016600 ms)
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000383 seconds.
-  path: Assets/Free Game Items/96dpi/book.png
-  artifactKey: Guid(405f359d0ed349e439b3e500b5f55c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/96dpi/book.png using Guid(405f359d0ed349e439b3e500b5f55c8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82ad9ce72eb0fb082163ba15955061c7') in 0.017743 seconds
-  Import took 0.020997 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003159 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.810 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.91 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1172 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.8 MB.
+System memory in use after: 62.9 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1652.
+Total: 6.294000 ms (FindLiveObjects: 0.493300 ms CreateObjectMapping: 0.167300 ms MarkObjects: 5.579200 ms  DeleteObjects: 0.050400 ms)
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000596 seconds.
-  path: Assets/Free Game Items/96dpi/belt.png
-  artifactKey: Guid(d86414d0f9dab17468a82adb2de3b623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/96dpi/belt.png using Guid(d86414d0f9dab17468a82adb2de3b623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cfbfd2add1eaf6aa19b497b5f8cbc8a') in 0.016798 seconds
-  Import took 0.021167 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001454 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.940 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.89 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1172 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.9 MB.
+System memory in use after: 63.0 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1655.
+Total: 4.732800 ms (FindLiveObjects: 0.338200 ms CreateObjectMapping: 0.206900 ms MarkObjects: 4.150400 ms  DeleteObjects: 0.033400 ms)
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.001338 seconds.
-  path: Assets/Free Game Items/300dpi/flashlight.png
-  artifactKey: Guid(13baec530bb89bf45a6f175a1375ea83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/300dpi/flashlight.png using Guid(13baec530bb89bf45a6f175a1375ea83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0816ce9a0b444709f8ef6419f105af5a') in 0.015065 seconds
-  Import took 0.018045 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001171 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.67 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.803 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.05 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1172 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.9 MB.
+System memory in use after: 63.0 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1658.
+Total: 6.021400 ms (FindLiveObjects: 0.444900 ms CreateObjectMapping: 0.167700 ms MarkObjects: 5.353800 ms  DeleteObjects: 0.048600 ms)
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000450 seconds.
-  path: Assets/Free Game Items/96dpi/gem_3.png
-  artifactKey: Guid(9ed20a5564e5d694cbf9322747030227) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/96dpi/gem_3.png using Guid(9ed20a5564e5d694cbf9322747030227) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '754249e6d90ed7f38c5a0aae4ac6f046') in 0.015375 seconds
-  Import took 0.018815 seconds .
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001494 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.290 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1172 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 62.9 MB.
+System memory in use after: 63.0 MB.
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000610 seconds.
-  path: Assets/Free Game Items/96dpi/ammo.png
-  artifactKey: Guid(89f23bff12960d44b9e2ff317502a1eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/96dpi/ammo.png using Guid(89f23bff12960d44b9e2ff317502a1eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8ac014008b3256ae8ce07ca91ce4e81') in 0.016387 seconds
-  Import took 0.020608 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000365 seconds.
-  path: Assets/Free Game Items/96dpi/backpack-1.png
-  artifactKey: Guid(299599986b195ec44ba0d4bf6f4d4804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/96dpi/backpack-1.png using Guid(299599986b195ec44ba0d4bf6f4d4804) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b491fa1f10c66bfc0c5904e35ff27f87') in 0.014042 seconds
-  Import took 0.016901 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000421 seconds.
-  path: Assets/Free Game Items/96dpi/backpack-2.png
-  artifactKey: Guid(e9b36b9e47f1f49468dc8b9c2a18927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/96dpi/backpack-2.png using Guid(e9b36b9e47f1f49468dc8b9c2a18927d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbd68a08a25e4e914ca05f271da8d2ff') in 0.013923 seconds
-  Import took 0.017990 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000912 seconds.
-  path: Assets/Free Game Items/96dpi/gem_1.png
-  artifactKey: Guid(1b4ab323c3684824c8c12d284b4688de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/96dpi/gem_1.png using Guid(1b4ab323c3684824c8c12d284b4688de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6896e6c818b1bc257e63683c9c7e1cf0') in 0.015492 seconds
-  Import took 0.019843 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000347 seconds.
-  path: Assets/Free Game Items/300dpi/gem_2.png
-  artifactKey: Guid(9e578035df2fdfc4c814a5678dbbb411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/300dpi/gem_2.png using Guid(9e578035df2fdfc4c814a5678dbbb411) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eec8f211d61abe08b3318acdcdcf95ab') in 0.013228 seconds
-  Import took 0.016930 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000374 seconds.
-  path: Assets/Free Game Items/96dpi/bandage.png
-  artifactKey: Guid(55d319343d6d686429960c7dce53140d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/96dpi/bandage.png using Guid(55d319343d6d686429960c7dce53140d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee20d4b3b40d7f3d3b054bd42d85cecf') in 0.016958 seconds
-  Import took 0.020199 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000568 seconds.
-  path: Assets/Free Game Items/96dpi/gem_4.png
-  artifactKey: Guid(059e0200b58f439459fd2ce08a794e91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/96dpi/gem_4.png using Guid(059e0200b58f439459fd2ce08a794e91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d1f7ac9f564aecd3162e222f14acc13') in 0.013656 seconds
-  Import took 0.017348 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000391 seconds.
-  path: Assets/Free Game Items/96dpi/gem_2.png
-  artifactKey: Guid(59dceeb1278244b429441fc1a4d16dc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/96dpi/gem_2.png using Guid(59dceeb1278244b429441fc1a4d16dc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2618d746ef3101d3a132a3c316e2d019') in 0.014866 seconds
-  Import took 0.018350 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000461 seconds.
-  path: Assets/Free Game Items/300dpi/pill.png
-  artifactKey: Guid(619d73d8279488e44ad15761d2b24b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/300dpi/pill.png using Guid(619d73d8279488e44ad15761d2b24b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f2968e5578cfa5efa146366f431b3ba') in 0.015470 seconds
-  Import took 0.018429 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000739 seconds.
-  path: Assets/Free Game Items/96dpi/flashlight.png
-  artifactKey: Guid(81f594ac68469784784aa5e0c5f111a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/96dpi/flashlight.png using Guid(81f594ac68469784784aa5e0c5f111a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b76fe927ccf6515c20d6c7c62bade9f') in 0.014897 seconds
-  Import took 0.018447 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000407 seconds.
-  path: Assets/Free Game Items/300dpi/gem_3.png
-  artifactKey: Guid(a20ad592324eeca408ef226fc1ad3752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/300dpi/gem_3.png using Guid(a20ad592324eeca408ef226fc1ad3752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '974469124ff94980bb1539c525a245e3') in 0.013055 seconds
-  Import took 0.018114 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000373 seconds.
-  path: Assets/Free Game Items/96dpi/brick.png
-  artifactKey: Guid(28a60fe33df63c644be23b260b95b731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/96dpi/brick.png using Guid(28a60fe33df63c644be23b260b95b731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd35e98ea0048c9e338f50dddf332665b') in 0.012934 seconds
-  Import took 0.017575 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000869 seconds.
-  path: Assets/Free Game Items/300dpi/gem_4.png
-  artifactKey: Guid(3c3a006bd25f76d41a12cd6b35a5d622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/300dpi/gem_4.png using Guid(3c3a006bd25f76d41a12cd6b35a5d622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3405de3c6a111a598e578ca4a7996970') in 0.017534 seconds
-  Import took 0.020682 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000402 seconds.
-  path: Assets/Free Game Items/96dpi/chemical_light.png
-  artifactKey: Guid(cc7773ef4a2e0cb40859bd61c2c27b1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/96dpi/chemical_light.png using Guid(cc7773ef4a2e0cb40859bd61c2c27b1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eb64c02f3a943d2595558f29f39f86c') in 0.010762 seconds
-  Import took 0.013025 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000354 seconds.
-  path: Assets/Materials/Teamprojekt/istockphoto-1174148180-170667a.jpg
-  artifactKey: Guid(f1f8f3ff9f4da6a4daa596ee7080dcd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Teamprojekt/istockphoto-1174148180-170667a.jpg using Guid(f1f8f3ff9f4da6a4daa596ee7080dcd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24863619f9a5e8e30636bd76e6b77798') in 0.019481 seconds
-  Import took 0.022358 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000704 seconds.
-  path: Assets/Free Game Items/300dpi/gem_1.png
-  artifactKey: Guid(6f1afce65949909419b0a70a51a7918b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/300dpi/gem_1.png using Guid(6f1afce65949909419b0a70a51a7918b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3872ed9aa6a7726ecf618b9216aba0e4') in 0.019687 seconds
-  Import took 0.024035 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000328 seconds.
-  path: Assets/Free Game Items/300dpi/feather.png
-  artifactKey: Guid(77077ad6096c0a54d9c99e2ad7128a0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/300dpi/feather.png using Guid(77077ad6096c0a54d9c99e2ad7128a0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d7ea7b7d9b962333aba610ac88cd186') in 0.014205 seconds
-  Import took 0.017073 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000318 seconds.
-  path: Assets/Free Game Items/300dpi/chemical_light.png
-  artifactKey: Guid(192f6d5ab9157f7449f8266aa47e9618) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/300dpi/chemical_light.png using Guid(192f6d5ab9157f7449f8266aa47e9618) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef5e4260ad067019c8ae68560137bbeb') in 0.013962 seconds
-  Import took 0.018022 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000870 seconds.
-  path: Assets/Free Game Items/300dpi/machete.png
-  artifactKey: Guid(a1c4e5c36c7ec7e42ae3cbadc63fb92a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/300dpi/machete.png using Guid(a1c4e5c36c7ec7e42ae3cbadc63fb92a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '859928aa99958380a987ef8d801c1929') in 0.016502 seconds
-  Import took 0.019499 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000331 seconds.
-  path: Assets/Free Game Items/96dpi/machete.png
-  artifactKey: Guid(c6a995b6b3cc2664fbddcfcb3a83293b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/96dpi/machete.png using Guid(c6a995b6b3cc2664fbddcfcb3a83293b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6b37c48ab4809f274cecae7aaac6d79') in 0.016365 seconds
-  Import took 0.019287 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000441 seconds.
-  path: Assets/Free Game Items/96dpi/clover.png
-  artifactKey: Guid(b791d37cdec063e4abd56e980fc82f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/96dpi/clover.png using Guid(b791d37cdec063e4abd56e980fc82f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4d2fffc154be34701396a565bf3ce57') in 0.017941 seconds
-  Import took 0.022506 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000431 seconds.
-  path: Assets/Free Game Items/300dpi/clover.png
-  artifactKey: Guid(7fbd9ab32b329464a8c464e9fea41ded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/300dpi/clover.png using Guid(7fbd9ab32b329464a8c464e9fea41ded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbf3a55c84e7134e538ddc10f678f424') in 0.014335 seconds
-  Import took 0.018308 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000392 seconds.
-  path: Assets/Free Game Items/96dpi/pill.png
-  artifactKey: Guid(0289efeb9feff2947b266fed980218d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/96dpi/pill.png using Guid(0289efeb9feff2947b266fed980218d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '967dd7ac5cfe9a945a082c55488c2afe') in 0.014501 seconds
-  Import took 0.017717 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000465 seconds.
-  path: Assets/Free Game Items/96dpi/hammer.png
-  artifactKey: Guid(27bdb876939215f41bd72bd2f5ad21f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/96dpi/hammer.png using Guid(27bdb876939215f41bd72bd2f5ad21f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3952a2e62a7702c453a4cb5c3011c714') in 0.015704 seconds
-  Import took 0.019415 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000272 seconds.
-  path: Assets/Free Game Items/96dpi/feather.png
-  artifactKey: Guid(d978eb0536f3b6046a6428f028d5a943) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/96dpi/feather.png using Guid(d978eb0536f3b6046a6428f028d5a943) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e707c6af84ce117c0e4ff9f4b7c54a16') in 0.014012 seconds
-  Import took 0.017107 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000299 seconds.
-  path: Assets/Free Game Items/96dpi/bronze_coin.png
-  artifactKey: Guid(e275e9f15c58d384f9346765f69e49d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/96dpi/bronze_coin.png using Guid(e275e9f15c58d384f9346765f69e49d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0b2be69e22bf67ef6784821949c0a43') in 0.014751 seconds
-  Import took 0.017337 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.094964 seconds.
-  path: Assets/Free Game Items/300dpi/pills.png
-  artifactKey: Guid(06d02d07843f570469ba6d32b0806d13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/300dpi/pills.png using Guid(06d02d07843f570469ba6d32b0806d13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4db42e414aa8638ea15eae01732e164b') in 0.017791 seconds
-  Import took 0.021578 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000338 seconds.
-  path: Assets/Free Game Items/96dpi/potion_2.png
-  artifactKey: Guid(80bd76bfccc703a4db676af435d54055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/96dpi/potion_2.png using Guid(80bd76bfccc703a4db676af435d54055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '070d85a36c73adc9c90a07b53a9f9e83') in 0.010945 seconds
-  Import took 0.013239 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000266 seconds.
-  path: Assets/Free Game Items/96dpi/pills.png
-  artifactKey: Guid(dfecc0923b6ad9e4bb1187809ad62dad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/96dpi/pills.png using Guid(dfecc0923b6ad9e4bb1187809ad62dad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '642d7d239c3afbef4a2e528b0f299399') in 0.014420 seconds
-  Import took 0.016746 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000394 seconds.
-  path: Assets/Free Game Items/300dpi/potion_1_empty.png
-  artifactKey: Guid(597d01b22596a204d8c2a1961f356ce7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/300dpi/potion_1_empty.png using Guid(597d01b22596a204d8c2a1961f356ce7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9376da95f8a3c0d93da310d340f0d0dd') in 0.016686 seconds
-  Import took 0.019505 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000638 seconds.
-  path: Assets/Free Game Items/300dpi/potion_1.png
-  artifactKey: Guid(1d130991a81017b4a9b4046ef0302b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/300dpi/potion_1.png using Guid(1d130991a81017b4a9b4046ef0302b0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7000824ffe55a9a8bdde6560bf877ea') in 0.015312 seconds
-  Import took 0.018337 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001058 seconds.
-  path: Assets/Free Game Items/96dpi/potion_1_empty.png
-  artifactKey: Guid(6d3666605cd21104fa84a1a601df5597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/96dpi/potion_1_empty.png using Guid(6d3666605cd21104fa84a1a601df5597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1544725b7a865789f9e3ee41057adfb') in 0.011974 seconds
-  Import took 0.015661 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000324 seconds.
-  path: Assets/Free Game Items/300dpi/potion_2_empty.png
-  artifactKey: Guid(7267ca3baae6b154fa428afb98b4b733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/300dpi/potion_2_empty.png using Guid(7267ca3baae6b154fa428afb98b4b733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab7acce749ec74f11861f14e532295da') in 0.013229 seconds
-  Import took 0.015752 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000812 seconds.
-  path: Assets/Free Game Items/preview.png
-  artifactKey: Guid(f9d96f4e7a15ef24c8c757d3388b9c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/preview.png using Guid(f9d96f4e7a15ef24c8c757d3388b9c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37058cad1b352e230069b3c705483a09') in 0.033282 seconds
-  Import took 0.037783 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000630 seconds.
-  path: Assets/Free Game Items/300dpi/potion_2.png
-  artifactKey: Guid(474743fd1d14e0d49adbf83ffa9ce83a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/300dpi/potion_2.png using Guid(474743fd1d14e0d49adbf83ffa9ce83a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '260bb19566ddab51692dd6e6b80a972b') in 0.013476 seconds
-  Import took 0.015958 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000796 seconds.
-  path: Assets/Free Game Items/96dpi/potion_2_empty.png
-  artifactKey: Guid(3e6700891a58cc44392dd1f1f841b3da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/96dpi/potion_2_empty.png using Guid(3e6700891a58cc44392dd1f1f841b3da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ed7496e71631a4973fdfe79551a35de') in 0.016900 seconds
-  Import took 0.020529 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000562 seconds.
-  path: Assets/Free Game Items/96dpi/potion_1.png
-  artifactKey: Guid(c5eceadfabbf8214abff1dad1b45500c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Game Items/96dpi/potion_1.png using Guid(c5eceadfabbf8214abff1dad1b45500c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c476ffe738bab3e70dc3c7605fcb0af') in 0.011256 seconds
-  Import took 0.014789 seconds .
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1661.
+Total: 5.508500 ms (FindLiveObjects: 0.387000 ms CreateObjectMapping: 0.121200 ms MarkObjects: 4.950800 ms  DeleteObjects: 0.045600 ms)
 

@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-//if random errors occur try to remove this line:
-//using UnityEngine.UI;
-//
+
 
 public class UserMovement : MonoBehaviour
 {
@@ -12,15 +10,6 @@ public class UserMovement : MonoBehaviour
     public float rotateSpeed;
     public float scrollSpeed;
     public GameObject playerCamera;
-
-    public ParticleSystem effect;
-
-    public GameObject AlreadyFoundText;
-   // public GameObject tracker;
-    public GameObject inventory;
-    public GameObject map;
-    
-
    
 
     //Gems
@@ -42,9 +31,6 @@ public class UserMovement : MonoBehaviour
     public GameObject GrowthText;
     public GameObject BuildingsIndustryText;
     public GameObject PlantText;
-
-    public GameObject MapText;
-
 
 
     //Minigems
@@ -68,22 +54,27 @@ public class UserMovement : MonoBehaviour
     public GameObject PlantGemMap;
 
 
+    //inventory and map
 
-    //count and inventory
     public int count;
-    public TMP_Text countText;
-    
-    public GameObject ChallengeBackground;
-    public Material[] materials;
-    public TMP_Text challengeText;
-    public Material[] gems;
 
+    public ParticleSystem effect;
+
+    public GameObject inventory;
+    public GameObject map;
+    public GameObject MapText;
+    public GameObject ChallengeBackground;
+    public GameObject AlreadyFoundText;
     public GameObject InventoryText;
     public GameObject ChallengeText;
 
-    //random
-    public GameObject FoundGemText;
-    public GameObject TestText;
+    public TMP_Text countText;
+    public TMP_Text challengeText;
+
+    public Material[] materials;
+    public Material[] gems;
+
+  
 
     void Start()
     {
@@ -93,15 +84,10 @@ public class UserMovement : MonoBehaviour
         SetChallengeProgress();
         SetChallengeText();
 
-        //effect = GetComponent<ParticleSystem>();
-        //effect.enableEmission = true;
-
         effect.Stop();
-        //ParticleSystem ps = GetComponent<ParticleSystem>();
         var lights = effect.lights;
         lights.enabled = false;
-        //effect.lights.enabled = false;
-
+        
         //deactivate gems
         TransportEfficiencyGem.SetActive(false);
         EnergySupplyGem.SetActive(false);
@@ -125,13 +111,9 @@ public class UserMovement : MonoBehaviour
 
         //deactivate texts
         AlreadyFoundText.SetActive(false);
-        TestText.SetActive(false);
-        FoundGemText.SetActive(false);
         InventoryText.SetActive(false);
         ChallengeText.SetActive(false);
-
         MapText.SetActive(false);
-
         TransportEfficiencyText.SetActive(false);
         InstructionText.SetActive(false);
         EnergySupplyText.SetActive(false);
@@ -184,12 +166,6 @@ public class UserMovement : MonoBehaviour
             transform.position += transform.TransformDirection(Vector3.forward)*Input.mouseScrollDelta.y * Time.deltaTime * scrollSpeed * 2.5f;
         }
 
-        float x;
-        float y;
-        x = (transform.position.x) / 24;
-        y = (transform.position.z) / 24;
-        //tracker.transform.position.Set(x, y, 0f);
-
         if (inventory.activeSelf)
         {
             map.SetActive(true);
@@ -207,96 +183,73 @@ public class UserMovement : MonoBehaviour
         
          if (other.gameObject.CompareTag("TransportEfficiency"))
         {
-            inventory.SetActive(false);
-            TransportEfficiencyGem.SetActive(false);
-            TransportEfficiencyGemMini.SetActive(true);
-            TransportEfficiencyText.SetActive(true);
+            CollectGem(TransportEfficiencyGem, TransportEfficiencyGemMini, TransportEfficiencyText);
             TransportEfficiencyGemMap.GetComponent<MeshRenderer>().material = gems[2];
-            count++;
-            //FoundGemText.SetActive(true);   
+            
         }
         else if (other.gameObject.CompareTag("Instruction"))
         {
-            inventory.SetActive(false);
-            InstructionGem.SetActive(false);
-            InstructionGemMini.SetActive(true);
-            InstructionText.SetActive(true);
+            CollectGem(InstructionGem, InstructionGemMini, InstructionText);
             InstructionGemMap.GetComponent<MeshRenderer>().material = gems[1];
-            count ++;
-            effect.Play();
+            
         }
 
         else if (other.gameObject.CompareTag("EnergySupply"))
         {
-            inventory.SetActive(false);
-            EnergySupplyGem.SetActive(false);
-            EnergySupplyGemMini.SetActive(true);
-            EnergySupplyText.SetActive(true);
+            CollectGem(EnergySupplyGem, EnergySupplyGemMini, EnergySupplyText);
             EnergySupplyGemMap.GetComponent<MeshRenderer>().material = gems[3];
-            count++;
-            effect.Play();
+           
         }
 
         else if (other.gameObject.CompareTag("Emissions"))
         {
-            inventory.SetActive(false);
-            EmissionsGem.SetActive(false);
-            EmissionsGemMini.SetActive(true);
-            EmissionsText.SetActive(true);
+            CollectGem(EmissionsGem, EmissionsGemMini, EmissionsText);
             EmissionsGemMap.GetComponent<MeshRenderer>().material = gems[4];
-            count++;
-            effect.Play();
+           
         }
 
         else if (other.gameObject.CompareTag("CarbonRemoval"))
         {
-            inventory.SetActive(false);
-            CarbonRemovalGem.SetActive(false);
-            CarbonRemovalGemMini.SetActive(true);
-            CarbonRemovalText.SetActive(true);
+            CollectGem(CarbonRemovalGem, CarbonRemovalGemMini, CarbonRemovalText);
             CarbonRemovalGemMap.GetComponent<MeshRenderer>().material = gems[5];
-            count++;
-            effect.Play();
         }
 
         else if (other.gameObject.CompareTag("Growth"))
         {
-            inventory.SetActive(false);
-            GrowthGem.SetActive(false);
-            GrowthGemMini.SetActive(true);
-            GrowthText.SetActive(true);
-            GrowthGemMap.GetComponent<MeshRenderer>().material = gems[7];
-            count++;
-            effect.Play();
+            CollectGem(GrowthGem, GrowthGemMini, GrowthText);
+            GrowthGemMap.GetComponent<MeshRenderer>().material = gems[6];
         }
 
         else if (other.gameObject.CompareTag("BuildingsIndustry"))
         {
-            inventory.SetActive(false);
-            BuildingsIndustryGem.SetActive(false);
-            BuildingsIndustryGemMini.SetActive(true);
-            BuildingsIndustryText.SetActive(true);
-            BuildingsIndustryGemMap.GetComponent<MeshRenderer>().material = gems[6];
-            count++;
-            effect.Play();
+
+            CollectGem(BuildingsIndustryGem, BuildingsIndustryGemMini, BuildingsIndustryText);
+            BuildingsIndustryGemMap.GetComponent<MeshRenderer>().material = gems[7];
+            
         }
 
         else if (other.gameObject.CompareTag("Plant"))
         {
-            inventory.SetActive(false);
-            PlantGem.SetActive(false);
-            PlantGemMini.SetActive(true);
-            PlantText.SetActive(true);
+            CollectGem(PlantGem, PlantGemMini, PlantText);
             PlantGemMap.GetComponent<MeshRenderer>().material = gems[8];
-            count++;
-            effect.Play();
+            
         }
-
 
         SetCountText();
         SetChallengeProgress();
         SetChallengeText();
 
+    }
+
+
+    void CollectGem (GameObject gem, GameObject minigem, GameObject text)
+    {
+        gem.SetActive(false);
+        minigem.SetActive(true);
+        text.SetActive(true);
+        count++;
+        effect.Play();
+        inventory.SetActive(false);
     }
 
     void SetCountText()
