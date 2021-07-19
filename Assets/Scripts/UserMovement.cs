@@ -42,6 +42,10 @@ public class UserMovement : MonoBehaviour
     public GameObject BuildingsIndustryText;
     public GameObject PlantText;
 
+    public GameObject MapText;
+
+
+
     //Minigems
     public GameObject TransportEfficiencyGemMini;
     public GameObject InstructionGemMini;
@@ -124,6 +128,8 @@ public class UserMovement : MonoBehaviour
         FoundGemText.SetActive(false);
         InventoryText.SetActive(false);
         ChallengeText.SetActive(false);
+
+        MapText.SetActive(false);
 
         TransportEfficiencyText.SetActive(false);
         InstructionText.SetActive(false);
