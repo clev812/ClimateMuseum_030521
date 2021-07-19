@@ -52,6 +52,17 @@ public class UserMovement : MonoBehaviour
     public GameObject BuildingsIndustryGemMini;
     public GameObject PlantGemMini;
 
+    //Map gems
+    public GameObject TransportEfficiencyGemMap;
+    public GameObject InstructionGemMap;
+    public GameObject EnergySupplyGemMap;
+    public GameObject EmissionsGemMap;
+    public GameObject CarbonRemovalGemMap;
+    public GameObject GrowthGemMap;
+    public GameObject BuildingsIndustryGemMap;
+    public GameObject PlantGemMap;
+
+
 
     //count and inventory
     public int count;
@@ -60,6 +71,7 @@ public class UserMovement : MonoBehaviour
     public GameObject ChallengeBackground;
     public Material[] materials;
     public TMP_Text challengeText;
+    public Material[] gems;
 
     public GameObject InventoryText;
     public GameObject ChallengeText;
@@ -183,6 +195,7 @@ public class UserMovement : MonoBehaviour
             TransportEfficiencyGem.SetActive(false);
             TransportEfficiencyGemMini.SetActive(true);
             TransportEfficiencyText.SetActive(true);
+            TransportEfficiencyGemMap.GetComponent<MeshRenderer>().material = gems[2];
             count++;
             //FoundGemText.SetActive(true);   
         }
@@ -192,6 +205,7 @@ public class UserMovement : MonoBehaviour
             InstructionGem.SetActive(false);
             InstructionGemMini.SetActive(true);
             InstructionText.SetActive(true);
+            InstructionGemMap.GetComponent<MeshRenderer>().material = gems[1];
             count ++;
             effect.Play();
         }
@@ -202,6 +216,7 @@ public class UserMovement : MonoBehaviour
             EnergySupplyGem.SetActive(false);
             EnergySupplyGemMini.SetActive(true);
             EnergySupplyText.SetActive(true);
+            EnergySupplyGemMap.GetComponent<MeshRenderer>().material = gems[3];
             count++;
             effect.Play();
         }
@@ -212,6 +227,7 @@ public class UserMovement : MonoBehaviour
             EmissionsGem.SetActive(false);
             EmissionsGemMini.SetActive(true);
             EmissionsText.SetActive(true);
+            EmissionsGemMap.GetComponent<MeshRenderer>().material = gems[4];
             count++;
             effect.Play();
         }
@@ -222,6 +238,7 @@ public class UserMovement : MonoBehaviour
             CarbonRemovalGem.SetActive(false);
             CarbonRemovalGemMini.SetActive(true);
             CarbonRemovalText.SetActive(true);
+            CarbonRemovalGemMap.GetComponent<MeshRenderer>().material = gems[5];
             count++;
             effect.Play();
         }
@@ -232,6 +249,7 @@ public class UserMovement : MonoBehaviour
             GrowthGem.SetActive(false);
             GrowthGemMini.SetActive(true);
             GrowthText.SetActive(true);
+            GrowthGemMap.GetComponent<MeshRenderer>().material = gems[7];
             count++;
             effect.Play();
         }
@@ -242,6 +260,7 @@ public class UserMovement : MonoBehaviour
             BuildingsIndustryGem.SetActive(false);
             BuildingsIndustryGemMini.SetActive(true);
             BuildingsIndustryText.SetActive(true);
+            BuildingsIndustryGemMap.GetComponent<MeshRenderer>().material = gems[6];
             count++;
             effect.Play();
         }
@@ -252,6 +271,7 @@ public class UserMovement : MonoBehaviour
             PlantGem.SetActive(false);
             PlantGemMini.SetActive(true);
             PlantText.SetActive(true);
+            PlantGemMap.GetComponent<MeshRenderer>().material = gems[8];
             count++;
             effect.Play();
         }
